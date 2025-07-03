@@ -19,7 +19,7 @@ if st.button("Teach Me") and user_input:
     with st.spinner("Thinking..."):
         try:
             response = client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-3.5-turbo",
                 messages=[
                     {"role": "system", "content": "You are an expert AI tutor who explains technical concepts clearly and simply."},
                     {"role": "user", "content": user_input}
