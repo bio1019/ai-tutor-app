@@ -3,7 +3,8 @@ import os
 from openai import OpenAI
 
 # Load API key from Streamlit secrets
-client = OpenAI(api_key=os.getenv("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"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 # Streamlit UI setup
 st.set_page_config(page_title="AI Tutor", page_icon="🧠")
